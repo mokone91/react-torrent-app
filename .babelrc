@@ -1,0 +1,31 @@
+{
+  "presets": [
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": [
+    [
+      "transform-imports",
+      {
+        "react-bootstrap": {
+          "transform": "react-bootstrap/lib/${member}",
+          "preventFullImport": true
+        },
+        "lodash": {
+          "transform": "lodash/${member}",
+          "preventFullImport": true
+        },
+        "redux-form": {
+          "transform": "redux-form/es/${member}",
+          "preventFullImport": true
+        }
+      }
+    ]
+  ]
+}

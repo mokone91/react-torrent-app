@@ -1,0 +1,23 @@
+@import "../../less/variables";
+.navbar-default {
+  &.navbar {
+    li {
+      > a {
+        &.navLink {
+          text-transform: uppercase;
+          border-top: 5px solid @navbar-default-bg;
+          padding: 15px 0;
+          color: @navbar-default-link-color;
+          &:hover {
+            color: @navbar-default-link-hover-color;
+            border-top: 5px solid fadeout(@brand-primary, 60%);
+          }
+          &.active {
+            color: @navbar-default-link-active-color;
+            border-top: 5px solid @brand-primary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+#webstorm
+.idea
+
+#local config file
+*config.local.js

@@ -1,0 +1,70 @@
+@import "~ladda/dist/ladda-themeless.min.css";
+
+@import (reference) "../../less/variables";
+
+.ladda-button {
+  &.btn {
+    transition: all 0.2s ease 0s;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-radius: @border-radius-base;
+  }
+
+  &.btn-black {
+    background-color: black;
+    border-color: black;
+    color: #fff;
+    &:hover, &:focus {
+      background-color: transparent;
+      color: black;
+    }
+  }
+
+  &.btn-white {
+    background-color: #fff;
+    border-color: #fff;
+    &:hover, &:focus {
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+
+  &.btn-orange {
+    background: #d45e10;
+    color: #fff;
+    &:hover, &:focus {
+      background: #b74f10 !important;
+      color: #fff !important;
+    }
+  }
+
+  &.btn-transparent {
+    background-color: transparent;
+    &.btn-white {
+      color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: @brand-primary;
+      }
+    }
+    &.btn-black {
+      color: black;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+
+    &.btn-primary {
+      color: @brand-primary;
+      &:active, &.active, &:focus, &.focus {
+        color: #fff;
+        border-color: @brand-primary;
+      }
+      &:hover {
+        color: #fff;
+        background-color: @brand-primary;
+      }
+    }
+  }
+}
