@@ -19,6 +19,10 @@ module.exports = {
       },
     })
   ],
+  target: 'web',
+  node: {
+    fs: 'empty'
+  },
   output,
   resolve,
   module: {

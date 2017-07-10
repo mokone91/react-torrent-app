@@ -5,7 +5,7 @@ const initialState = {
   loader: []
 };
 
-function loader(state = initialState.loader, action) {
+function loader(state = initialState, action) {
   switch (action.type) {
     case LoaderActionTypes.START_LOADER: {
       return [
@@ -16,7 +16,6 @@ function loader(state = initialState.loader, action) {
     case LoaderActionTypes.STOP_LOADER: {
       return [...pull(state, action.payload)];
     }
-
     default:
       return state;
   }

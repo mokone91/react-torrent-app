@@ -10,7 +10,6 @@ import "./rootStyle.less";
 
 const propTypes = {
   children: PropTypes.object.isRequired,
-  me: PropTypes.func.isRequired,
   loading: PropTypes.bool
 };
 
